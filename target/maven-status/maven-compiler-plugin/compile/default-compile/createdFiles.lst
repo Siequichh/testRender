@@ -1,0 +1,7 @@
+com\siequichh\demorender\entity\Persona.class
+com\siequichh\demorender\service\PersonaService.class
+com\siequichh\demorender\service\PersonaServiceImpl.class
+com\siequichh\demorender\dao\PersonaDAO.class
+com\siequichh\demorender\DemoRenderApplication.class
+com\siequichh\demorender\request\PersonaRequest.class
+com\siequichh\demorender\controller\PersonaController.class
