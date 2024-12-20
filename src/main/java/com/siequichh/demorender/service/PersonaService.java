@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface PersonaService {
     List<Persona> getAllPersonas();
+    List<Persona> searchPersonaByNombre(String nombre);
 }

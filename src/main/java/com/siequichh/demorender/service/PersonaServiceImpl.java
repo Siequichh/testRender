@@ -15,4 +15,8 @@ public class PersonaServiceImpl implements PersonaService {
     public List<Persona> getAllPersonas() {
         return personaDAO.findAll();
     }
+    @Override
+    public List<Persona> searchPersonaByNombre(String nombre) {
+        return personaDAO.findByNombreContaining(nombre);
+    }
 }
