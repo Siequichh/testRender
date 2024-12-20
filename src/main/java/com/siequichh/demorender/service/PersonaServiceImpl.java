@@ -4,6 +4,7 @@ import com.siequichh.demorender.dao.PersonaDAO;
 import com.siequichh.demorender.entity.Persona;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ public class PersonaServiceImpl implements PersonaService {
         return personaDAO.findAll();
     }
     @Override
+    @Transactional
     public List<Persona> searchPersonaByNombre(String nombre) {
         return personaDAO.findByNombreContaining(nombre);
     }
